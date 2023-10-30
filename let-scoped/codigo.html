@@ -1,0 +1,17 @@
+<html>
+    <script>
+        //let = Só funciona dentro do escopo que ele foi criado
+        let x = 10
+        console.log("x", x)
+
+        {
+            console.log("x", x)
+            x = 20
+
+            let y = 30
+        }
+
+        console.log("x", x)
+        console.log("y", y)
+    </script>
+</html>
