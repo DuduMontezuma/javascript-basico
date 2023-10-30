@@ -1,0 +1,31 @@
+<html>
+    <script>
+        let name, age
+
+        name = "Dudu"
+        age = 27
+        address = {
+            street: "Toppen Maluco",
+            city: "Faria Lemos",
+        }
+
+        console.log("name", name)
+        console.log("age", age)
+
+        //Concatenação (antiga)
+        console.log(name + " tem " + age + " anos.")
+
+        // Interpolação
+        console.log(`${name} tem ${age} anos.`)
+
+        //Transformando um objeto em string
+        console.log(
+            name + " tem " + age + " anos. E reside em " + JSON.stringify
+            (address)       
+        )
+
+        console.log(
+            `${name} tem ${age} anos. E reside em ${JSON.stringify(address)}`
+        )
+    </script>
+</html>
