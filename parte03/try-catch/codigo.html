@@ -1,0 +1,18 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+        try {
+            //executa algo...
+            // consulta de API, Banco de dados, arquivos...
+            console.log("Consultando Banco de Dados...")
+
+            throw 'Erro 1032 ao conectar com o banco de dados'
+        } catch (error) {
+            //erro
+            alert('Erro de execução genérico. Por favor, fale com o suporte.')
+            console.error(error)
+        } finally {
+            //sempre executa ao final (opcional)
+        }
+    </script>
+</html>
